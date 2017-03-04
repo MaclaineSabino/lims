@@ -234,9 +234,9 @@ z-index:2000;
 nav{
 	height:180px ;
 	background-color:#FFFFFF;
-	-webkit-box-shadow: inset -73px -85px 94px -106px rgba(0,0,0,1);
--moz-box-shadow: inset -73px -85px 94px -106px rgba(0,0,0,1);
-box-shadow: inset -73px -85px 94px -106px rgba(0,0,0,1);
+	-webkit-box-shadow: inset -73px -85px 94px -106px rgba(48,20,207,1);
+-moz-box-shadow: inset -73px -85px 94px -106px rgba(48,20,207,1);
+box-shadow: inset -73px -85px 94px -106px rgba(48,20,207,1);
 	
 }
 nav a{
