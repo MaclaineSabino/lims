@@ -15,55 +15,63 @@
 </head>
 <body>
 	<div id="formulario-nibble">
-	<div id="botao-nibble-fechar"><i id="botao_fechar" class="material-icons">highlight_off</i> </div>
+				<div id="botao-nibble-fechar"><i id="botao_fechar" class="material-icons">highlight_off</i> </div>
 				
   <div class="row">
     <form class="col s12">
+    	
+      
+   
+    
       <div class="row">
         <div class="input-field col s6">
           <i class="material-icons prefix">account_circle</i>
-          <input id="icon_prefix" type="text" class="validate" required/>
+          <input id="icon_prefix" type="text" class="validate" required="">
           <label for="icon_prefix">Nome</label>
         </div>
         <div class="input-field col s6">
           <i class="material-icons prefix">email</i>
-          <input id="icon_email" type="email" class="validate" required/>
-          <label for="icon_email">Email</label>
+          <input id="icon_email" type="email" class="validate" required="">
+          <label for="icon_email">e-mail</label>
         </div>
-        <div class="input-field col s6">
+        
+        	<div class="input-field col s6">
           <i class="material-icons prefix">mode_edit</i>
           <textarea id="icon_prefix2" class="materialize-textarea" required="Escreva sua mensagem"></textarea>
           <label for="icon_prefix2">Mensagem</label>
         </div>
-        <div id="grupo-radio" class="grupo_botoes">
-          <p>
-            <input class="grupo-radio" name="group1" type="radio" id="test1" checked />
-            <label for="test1">Aluno</label>
-          </p> 
-          <p>
-            <input class="grupo-radio" name="group1" type="radio" id="test2" />
-            <label for="test2">Professor</label>
-          </p>
-          <p>
-            <input class="grupo-radio" class="with-gap" name="group1" type="radio" id="test3"  />
-            <label for="test3">Outro</label>
-          </p>
-        </div>
-        <a class="waves-effect waves-light btn" onclick="Materialize.toast('Mensagem enviada com sucesso!', 5000)" href="index.html"><i class="material-icons right">send</i>ENVIAR</a>
+        
+        <div id="grupo-radio"
+       
+       <div class="grupo_botoes">
+       <p>
+        <input class="grupo-radio" name="group1" type="radio" id="test1" checked/>
+      <label for="test1">Aluno</label>
+    </p> 
+   <p>
+      <input class="grupo-radio" name="group1" type="radio" id="test2" />
+      <label for="test2">Professor</label>
+    </p>
+    <p>
+      <input class="grupo-radio" class="with-gap" name="group1" type="radio" id="test3"  />
+      <label for="test3">Outros</label>
+        </p>
+       </div>
+       </div>
+       <button class="btn waves-effect waves-light" type="submit" name="action">ENVIAR
+    <i class="material-icons right">send</i>
+  </button>
       </div>
-      </form>
-    </div>  
-	</div>
+    </form>
+  </div>
+        
+			</div>
 	
 	  <div class="conteiner-busca-nibble">
 				
-			<form>
-        <div class="input-field">
-          <input id="search" type="search" required>
-          <label class="label-icon" for="search"><i class="material-icons">search</i></label>
-          <i class="material-icons">close</i>
-        </div>
-      </form>
+			<form class="busca-nibble">
+				<i class="material-icons">search</i><input placeholder="Busca">
+			</form>
 			
 	  </div>
   
@@ -77,16 +85,11 @@
         <li><a id="btn_publicacoes" href="#">Publicações</a></li>
         <li><a id="btn_membros" href="#">Membros</a></li>
         <li><a id="btn_contato" href="#">Contato</a></li>
-<<<<<<< HEAD
          <li><a id="btn_contato" href="#">Login</a>
          	
          </li>
-=======
-        <li><a id="btn_contato" href="#">Login</a></li>
->>>>>>> origin/master
       </ul>
     </div>
-
   </nav>
         
  
