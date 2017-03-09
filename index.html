@@ -59,16 +59,14 @@
 				</button>
 			</form>
 		</div>
-
 	</div>
 
 	<div class="conteiner-busca-nibble">
-
 		<form class="busca-nibble">
 			<i class="material-icons">search</i><input placeholder="Busca">
 		</form>
-
 	</div>
+
 
 	<script>
 		$(function(){
@@ -83,12 +81,13 @@
 				<i class="material-icons">menu</i>
 			</a>
 			<ul id="nav-mobile" class="right hide-on-med-and-down">
-				<li><a id="btn_home" href="#">Home</a></li>
-				<li><a id="btn_projetos" href="#">Projetos</a></li>
-				<li><a id="btn_publicacoes" href="#">Publicações</a></li>
-				<li><a id="btn_membros" href="#">Membros</a></li>
-				<li><a id="btn_contato" href="#">Contato</a></li>
+				<li><a id="btn_home" href="#"><span class="light-blue-text text-darken-3">Home</span></a></li>
+				<li><a id="btn_projetos" href="#"><span class="light-blue-text text-darken-3">Projetos</span></a></li>
+				<li><a id="btn_publicacoes" href="#"><span class="light-blue-text text-darken-3">Publicações</span></a></li>
+				<li><a id="btn_membros" href="#"><span class="light-blue-text text-darken-3">Membros</a></span></li>
+				<li><a id="btn_contato" href="#"><span class="light-blue-text text-darken-3">Contato</a></span></li>
 			</ul>
+			
 			<ul class="side-nav" id="menu-mobile">
 				<li><a id="btn_home" href="#">Home</a></li>
 				<li><a id="btn_projetos" href="#">Projetos</a></li>
@@ -96,32 +95,13 @@
 				<li><a id="btn_membros" href="#">Membros</a></li>
 				<li><a id="btn_contato" href="#">Contato</a></li>
 			</ul>
+			
+		</nav>
 
-		</div>
-	</nav>
 
-
-	<div class="container">
-		<div id="nibble_lista">
-			<ul>
-				<li class="listas">
-					<img title="IA" src="images/IA.jpg">
-					<div class='tempo'><img src="images/tempo/calendario.png">
-						<span class="tempo_valores">20/12/2016</span>
-						<img class="img2" src="images/tempo/relogio.png">
-						<span class="tempo_valores">16:40</span></div>
-						<p class="titulo">Novas Tecnologias Usadas em I.A</p>
-						<div class="conteudo">O LIMS em parceria com a Apple está desenvolvendo 
-							uma tecnologia que será usada em projetos que visam 
-							uma Inteligência Artificial superior aos da atualidade. 
-							Membros do IFPI estão engajados nesse projeto que tem como 
-							líder o professor Fernando Santana, um professor que há 15 anos...
-						</div>
-						<div class='link_continuar'>
-							<a href="#">continuar</a>
-						</div>
-
-					</li>
+		<div class="container">
+			<div id="nibble_lista">
+				<ul>
 					<li class="listas">
 						<img title="IA" src="images/IA.jpg">
 						<div class='tempo'><img src="images/tempo/calendario.png">
@@ -266,146 +246,177 @@
 														</div>
 
 													</li>
-												</ul>
+													<li class="listas">
+														<img title="IA" src="images/IA.jpg">
+														<div class='tempo'><img src="images/tempo/calendario.png">
+															<span class="tempo_valores">20/12/2016</span>
+															<img class="img2" src="images/tempo/relogio.png">
+															<span class="tempo_valores">16:40</span></div>
+															<p class="titulo">Novas Tecnologias Usadas em I.A</p>
+															<div class="conteudo">O LIMS em parceria com a Apple está desenvolvendo 
+																uma tecnologia que será usada em projetos que visam 
+																uma Inteligência Artificial superior aos da atualidade. 
+																Membros do IFPI estão engajados nesse projeto que tem como 
+																líder o professor Fernando Santana, um professor que há 15 anos...
+															</div>
+															<div class='link_continuar'>
+																<a href="#">continuar</a>
+															</div>
 
-												<div class="paginacao">
-													<ul class="pagination">
-														<li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
-														<li class="active"><a href="#!">1</a></li>
-														<li class="waves-effect"><a href="#!">2</a></li>
-														<li class="waves-effect"><a href="#!">3</a></li>
-														<li class="waves-effect"><a href="#!">4</a></li>
-														<li class="waves-effect"><a href="#!">5</a></li>
-														<li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+														</li>
 													</ul>
+
+													<div class="paginacao">
+														<ul class="pagination">
+															<li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+															<li class="active"><a href="#!">1</a></li>
+															<li class="waves-effect"><a href="#!">2</a></li>
+															<li class="waves-effect"><a href="#!">3</a></li>
+															<li class="waves-effect"><a href="#!">4</a></li>
+															<li class="waves-effect"><a href="#!">5</a></li>
+															<li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+														</ul>
+
+													</div>
 
 												</div>
 
-											</div>
 
-
-											<div class="pj_conteudo" id="pj_projetos">
-												<ul class="collection" id="lis_projetos">
-													<li class="collection-item avatar">
-														<i class="material-icons circle green">insert_chart</i>
-														<span class="title">Projeto de Desenvolvimento de Tecnologia para Reconhecimento Facial</span>
-														<p class="pj_subtitulo">projeto está sendo realizado em parceria com alunos e professores
-														</p>
-														<p class="pj_datas">
-															<span class="dt_inicio">Data de Início: </span>
-															<span class="dt_conteudo">15/10/2016</span>
-														</p>
-														<a href="#!" class="secondary-content"><i class="material-icons">description</i></a>
-													</li>
-													<li class="collection-item avatar">
-														<i class="material-icons circle green">insert_chart</i>
-														<span class="title">Projeto de Desenvolvimento de Tecnologia para Reconhecimento Facial</span>
-														<p class="pj_subtitulo">projeto está sendo realizado em parceria com alunos e professores
-														</p>
-														<p class="pj_datas">
-															<span class="dt_inicio">Data de Início: </span>
-															<span class="dt_conteudo">15/10/2016</span>
-														</p>
-														<a href="#!" class="secondary-content"><i class="material-icons">description</i></a>
-													</li>
-													<li class="collection-item avatar">
-														<i class="material-icons circle green">insert_chart</i>
-														<span class="title">Projeto de Desenvolvimento de Tecnologia para Reconhecimento Facial</span>
-														<p class="pj_subtitulo">projeto está sendo realizado em parceria com alunos e professores
-														</p>
-														<p class="pj_datas">
-															<span class="dt_inicio">Data de Início: </span>
-															<span class="dt_conteudo">15/10/2016</span>
-														</p>
-														<a href="#!" class="secondary-content"><i class="material-icons">description</i></a>
-													</li>
-													<li class="collection-item avatar">
-														<i class="material-icons circle green">insert_chart</i>
-														<span class="title">Projeto de Desenvolvimento de Tecnologia para Reconhecimento Facial</span>
-														<p class="pj_subtitulo">projeto está sendo realizado em parceria com alunos e professores
-														</p>
-														<p class="pj_datas">
-															<span class="dt_inicio">Data de Início: </span>
-															<span class="dt_conteudo">15/10/2016</span>
-														</p>
-														<a href="#!" class="secondary-content"><i class="material-icons">description</i></a>
-													</li>
-													<li class="collection-item avatar">
-														<i class="material-icons circle green">insert_chart</i>
-														<span class="title">Projeto de Desenvolvimento de Tecnologia para Reconhecimento Facial</span>
-														<p class="pj_subtitulo">projeto está sendo realizado em parceria com alunos e professores
-														</p>
-														<p class="pj_datas">
-															<span class="dt_inicio">Data de Início: </span>
-															<span class="dt_conteudo">15/10/2016</span>
-														</p>
-														<a href="#!" class="secondary-content"><i class="material-icons">description</i></a>
-													</li>
-													<li class="collection-item avatar">
-														<i class="material-icons circle green">insert_chart</i>
-														<span class="title">Projeto de Desenvolvimento de Tecnologia para Reconhecimento Facial</span>
-														<p class="pj_subtitulo">projeto está sendo realizado em parceria com alunos e professores
-														</p>
-														<p class="pj_datas">
-															<span class="dt_inicio">Data de Início: </span>
-															<span class="dt_conteudo">15/10/2016</span>
-														</p>
-														<a href="#!" class="secondary-content"><i class="material-icons">description</i></a>
-													</li>
-													<li class="collection-item avatar">
-														<i class="material-icons circle green">insert_chart</i>
-														<span class="title">Projeto de Desenvolvimento de Tecnologia para Reconhecimento Facial</span>
-														<p class="pj_subtitulo">projeto está sendo realizado em parceria com alunos e professores
-														</p>
-														<p class="pj_datas">
-															<span class="dt_inicio">Data de Início: </span>
-															<span class="dt_conteudo">15/10/2016</span>
-														</p>
-														<a href="#!" class="secondary-content"><i class="material-icons">description</i></a>
-													</li>
-													<li class="collection-item avatar">
-														<i class="material-icons circle green">insert_chart</i>
-														<span class="title">Projeto de Desenvolvimento de Tecnologia para Reconhecimento Facial</span>
-														<p class="pj_subtitulo">projeto está sendo realizado em parceria com alunos e professores
-														</p>
-														<p class="pj_datas">
-															<span class="dt_inicio">Data de Início: </span>
-															<span class="dt_conteudo">15/10/2016</span>
-														</p>
-														<a href="#!" class="secondary-content"><i class="material-icons">description</i></a>
-													</li>
-
-												</ul>
-
-												<div class="paginacao">
-													<ul class="pagination">
-														<li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
-														<li class="active"><a href="#!">1</a></li>
-														<li class="waves-effect"><a href="#!">2</a></li>
-														<li class="waves-effect"><a href="#!">3</a></li>
-														<li class="waves-effect"><a href="#!">4</a></li>
-														<li class="waves-effect"><a href="#!">5</a></li>
-														<li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
-													</ul>
-
-												</div>
-
-											</div>
-
-
-
-
-
-
-
-
-											<div class="nibble_conteudo" id="nibble_membros">
-
-												<div class="colunas_membros">
-													<ul class="collection" id="list_membros">
+												<div class="pj_conteudo" id="pj_projetos">
+													<ul class="collection" id="lis_projetos">
 														<li class="collection-item avatar">
-															<img src="images/membros/duany.png" alt="" class="circle">
-															<span class="title">Duany Dreyton</span>
+															<i class="material-icons circle green">insert_chart</i>
+															<span class="title">Projeto de Desenvolvimento de Tecnologia para Reconhecimento Facial</span>
+															<p class="pj_subtitulo">projeto está sendo realizado em parceria com alunos e professores
+															</p>
+															<p class="pj_datas">
+																<span class="dt_inicio">Data de Início: </span>
+																<span class="dt_conteudo">15/10/2016</span>
+															</p>
+															<a href="#!" class="secondary-content"><i class="material-icons">description</i></a>
+														</li>
+														<li class="collection-item avatar">
+															<i class="material-icons circle green">insert_chart</i>
+															<span class="title">Projeto de Desenvolvimento de Tecnologia para Reconhecimento Facial</span>
+															<p class="pj_subtitulo">projeto está sendo realizado em parceria com alunos e professores
+															</p>
+															<p class="pj_datas">
+																<span class="dt_inicio">Data de Início: </span>
+																<span class="dt_conteudo">15/10/2016</span>
+															</p>
+															<a href="#!" class="secondary-content"><i class="material-icons">description</i></a>
+														</li>
+														<li class="collection-item avatar">
+															<i class="material-icons circle green">insert_chart</i>
+															<span class="title">Projeto de Desenvolvimento de Tecnologia para Reconhecimento Facial</span>
+															<p class="pj_subtitulo">projeto está sendo realizado em parceria com alunos e professores
+															</p>
+															<p class="pj_datas">
+																<span class="dt_inicio">Data de Início: </span>
+																<span class="dt_conteudo">15/10/2016</span>
+															</p>
+															<a href="#!" class="secondary-content"><i class="material-icons">description</i></a>
+														</li>
+														<li class="collection-item avatar">
+															<i class="material-icons circle green">insert_chart</i>
+															<span class="title">Projeto de Desenvolvimento de Tecnologia para Reconhecimento Facial</span>
+															<p class="pj_subtitulo">projeto está sendo realizado em parceria com alunos e professores
+															</p>
+															<p class="pj_datas">
+																<span class="dt_inicio">Data de Início: </span>
+																<span class="dt_conteudo">15/10/2016</span>
+															</p>
+															<a href="#!" class="secondary-content"><i class="material-icons">description</i></a>
+														</li>
+														<li class="collection-item avatar">
+															<i class="material-icons circle green">insert_chart</i>
+															<span class="title">Projeto de Desenvolvimento de Tecnologia para Reconhecimento Facial</span>
+															<p class="pj_subtitulo">projeto está sendo realizado em parceria com alunos e professores
+															</p>
+															<p class="pj_datas">
+																<span class="dt_inicio">Data de Início: </span>
+																<span class="dt_conteudo">15/10/2016</span>
+															</p>
+															<a href="#!" class="secondary-content"><i class="material-icons">description</i></a>
+														</li>
+														<li class="collection-item avatar">
+															<i class="material-icons circle green">insert_chart</i>
+															<span class="title">Projeto de Desenvolvimento de Tecnologia para Reconhecimento Facial</span>
+															<p class="pj_subtitulo">projeto está sendo realizado em parceria com alunos e professores
+															</p>
+															<p class="pj_datas">
+																<span class="dt_inicio">Data de Início: </span>
+																<span class="dt_conteudo">15/10/2016</span>
+															</p>
+															<a href="#!" class="secondary-content"><i class="material-icons">description</i></a>
+														</li>
+														<li class="collection-item avatar">
+															<i class="material-icons circle green">insert_chart</i>
+															<span class="title">Projeto de Desenvolvimento de Tecnologia para Reconhecimento Facial</span>
+															<p class="pj_subtitulo">projeto está sendo realizado em parceria com alunos e professores
+															</p>
+															<p class="pj_datas">
+																<span class="dt_inicio">Data de Início: </span>
+																<span class="dt_conteudo">15/10/2016</span>
+															</p>
+															<a href="#!" class="secondary-content"><i class="material-icons">description</i></a>
+														</li>
+														<li class="collection-item avatar">
+															<i class="material-icons circle green">insert_chart</i>
+															<span class="title">Projeto de Desenvolvimento de Tecnologia para Reconhecimento Facial</span>
+															<p class="pj_subtitulo">projeto está sendo realizado em parceria com alunos e professores
+															</p>
+															<p class="pj_datas">
+																<span class="dt_inicio">Data de Início: </span>
+																<span class="dt_conteudo">15/10/2016</span>
+															</p>
+															<a href="#!" class="secondary-content"><i class="material-icons">description</i></a>
+														</li>
+
+													</ul>
+
+													<div class="paginacao">
+														<ul class="pagination">
+															<li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+															<li class="active"><a href="#!">1</a></li>
+															<li class="waves-effect"><a href="#!">2</a></li>
+															<li class="waves-effect"><a href="#!">3</a></li>
+															<li class="waves-effect"><a href="#!">4</a></li>
+															<li class="waves-effect"><a href="#!">5</a></li>
+															<li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+														</ul>
+
+													</div>
+
+												</div>
+
+
+
+
+
+
+
+
+												<div class="nibble_conteudo" id="nibble_membros">
+
+													<div class="colunas_membros">
+														<ul class="collection" id="list_membros">
+															<li class="collection-item avatar">
+																<img src="images/membros/duany.png" alt="" class="circle">
+																<span class="title">Duany Dreyton</span>
+																<p>
+																	<span class="cargo">Professor</span>
+																	<span class="local">IFPI - Teresina</span>
+																</p>
+																<div class="detalhe_membro"><table><tr><td class="imagens_membros"><a href="#"><i class="material-icons">contact_mail</i></a></td><td class="contato">contato</td>
+																	<td class="imagens_membros"><a href="#"><i class="material-icons">description</i></a></td><td class="perfil">perfil</td>
+																</tr></table>
+															</div>
+
+														</li>
+														<li class="collection-item avatar">
+															<img src="images/membros/fernando.png" alt="" class="circle">
+															<span class="title">Fernando Santana</span>
 															<p>
 																<span class="cargo">Professor</span>
 																<span class="local">IFPI - Teresina</span>
@@ -417,8 +428,8 @@
 
 													</li>
 													<li class="collection-item avatar">
-														<img src="images/membros/fernando.png" alt="" class="circle">
-														<span class="title">Fernando Santana</span>
+														<img src="images/membros/fabio.png" alt="" class="circle">
+														<span class="title">Fábio de Jesus</span>
 														<p>
 															<span class="cargo">Professor</span>
 															<span class="local">IFPI - Teresina</span>
@@ -430,8 +441,8 @@
 
 												</li>
 												<li class="collection-item avatar">
-													<img src="images/membros/fabio.png" alt="" class="circle">
-													<span class="title">Fábio de Jesus</span>
+													<img src="images/membros/duany.png" alt="" class="circle">
+													<span class="title">Duany Dreyton</span>
 													<p>
 														<span class="cargo">Professor</span>
 														<span class="local">IFPI - Teresina</span>
@@ -443,8 +454,8 @@
 
 											</li>
 											<li class="collection-item avatar">
-												<img src="images/membros/duany.png" alt="" class="circle">
-												<span class="title">Duany Dreyton</span>
+												<img src="images/membros/fernando.png" alt="" class="circle">
+												<span class="title">Fernando Santana</span>
 												<p>
 													<span class="cargo">Professor</span>
 													<span class="local">IFPI - Teresina</span>
@@ -456,8 +467,8 @@
 
 										</li>
 										<li class="collection-item avatar">
-											<img src="images/membros/fernando.png" alt="" class="circle">
-											<span class="title">Fernando Santana</span>
+											<img src="images/membros/fabio.png" alt="" class="circle">
+											<span class="title">Fábio de Jesus</span>
 											<p>
 												<span class="cargo">Professor</span>
 												<span class="local">IFPI - Teresina</span>
@@ -469,8 +480,8 @@
 
 									</li>
 									<li class="collection-item avatar">
-										<img src="images/membros/fabio.png" alt="" class="circle">
-										<span class="title">Fábio de Jesus</span>
+										<img src="images/membros/duany.png" alt="" class="circle">
+										<span class="title">Duany Dreyton</span>
 										<p>
 											<span class="cargo">Professor</span>
 											<span class="local">IFPI - Teresina</span>
@@ -482,8 +493,8 @@
 
 								</li>
 								<li class="collection-item avatar">
-									<img src="images/membros/duany.png" alt="" class="circle">
-									<span class="title">Duany Dreyton</span>
+									<img src="images/membros/fernando.png" alt="" class="circle">
+									<span class="title">Fernando Santana</span>
 									<p>
 										<span class="cargo">Professor</span>
 										<span class="local">IFPI - Teresina</span>
@@ -495,8 +506,8 @@
 
 							</li>
 							<li class="collection-item avatar">
-								<img src="images/membros/fernando.png" alt="" class="circle">
-								<span class="title">Fernando Santana</span>
+								<img src="images/membros/fabio.png" alt="" class="circle">
+								<span class="title">Fábio de Jesus</span>
 								<p>
 									<span class="cargo">Professor</span>
 									<span class="local">IFPI - Teresina</span>
@@ -507,9 +518,14 @@
 							</div>
 
 						</li>
+					</ul>
+				</div>
+				<div class="colunas_membros">
+
+					<ul class="collection">
 						<li class="collection-item avatar">
-							<img src="images/membros/fabio.png" alt="" class="circle">
-							<span class="title">Fábio de Jesus</span>
+							<img src="images/membros/duany.png" alt="" class="circle">
+							<span class="title">Duany Dreyton</span>
 							<p>
 								<span class="cargo">Professor</span>
 								<span class="local">IFPI - Teresina</span>
@@ -520,14 +536,9 @@
 						</div>
 
 					</li>
-				</ul>
-			</div>
-			<div class="colunas_membros">
-
-				<ul class="collection">
 					<li class="collection-item avatar">
-						<img src="images/membros/duany.png" alt="" class="circle">
-						<span class="title">Duany Dreyton</span>
+						<img src="images/membros/fernando.png" alt="" class="circle">
+						<span class="title">Fernando Santana</span>
 						<p>
 							<span class="cargo">Professor</span>
 							<span class="local">IFPI - Teresina</span>
@@ -539,8 +550,8 @@
 
 				</li>
 				<li class="collection-item avatar">
-					<img src="images/membros/fernando.png" alt="" class="circle">
-					<span class="title">Fernando Santana</span>
+					<img src="images/membros/fabio.png" alt="" class="circle">
+					<span class="title">Fábio de Jesus</span>
 					<p>
 						<span class="cargo">Professor</span>
 						<span class="local">IFPI - Teresina</span>
@@ -552,8 +563,8 @@
 
 			</li>
 			<li class="collection-item avatar">
-				<img src="images/membros/fabio.png" alt="" class="circle">
-				<span class="title">Fábio de Jesus</span>
+				<img src="images/membros/duany.png" alt="" class="circle">
+				<span class="title">Duany Dreyton</span>
 				<p>
 					<span class="cargo">Professor</span>
 					<span class="local">IFPI - Teresina</span>
@@ -565,8 +576,8 @@
 
 		</li>
 		<li class="collection-item avatar">
-			<img src="images/membros/duany.png" alt="" class="circle">
-			<span class="title">Duany Dreyton</span>
+			<img src="images/membros/fernando.png" alt="" class="circle">
+			<span class="title">Fernando Santana</span>
 			<p>
 				<span class="cargo">Professor</span>
 				<span class="local">IFPI - Teresina</span>
@@ -578,8 +589,8 @@
 
 	</li>
 	<li class="collection-item avatar">
-		<img src="images/membros/fernando.png" alt="" class="circle">
-		<span class="title">Fernando Santana</span>
+		<img src="images/membros/fabio.png" alt="" class="circle">
+		<span class="title">Fábio de Jesus</span>
 		<p>
 			<span class="cargo">Professor</span>
 			<span class="local">IFPI - Teresina</span>
@@ -588,19 +599,6 @@
 			<td class="imagens_membros"><a href="#"><i class="material-icons">description</i></a></td><td class="perfil">perfil</td>
 		</tr></table>
 	</div>
-
-</li>
-<li class="collection-item avatar">
-	<img src="images/membros/fabio.png" alt="" class="circle">
-	<span class="title">Fábio de Jesus</span>
-	<p>
-		<span class="cargo">Professor</span>
-		<span class="local">IFPI - Teresina</span>
-	</p>
-	<div class="detalhe_membro"><table><tr><td class="imagens_membros"><a href="#"><i class="material-icons">contact_mail</i></a></td><td class="contato">contato</td>
-		<td class="imagens_membros"><a href="#"><i class="material-icons">description</i></a></td><td class="perfil">perfil</td>
-	</tr></table>
-</div>
 
 </li>
 <li class="collection-item avatar">
