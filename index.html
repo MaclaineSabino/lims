@@ -12,6 +12,8 @@
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/fonts.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="stylesheet" href="css/carroselhorizontal.css">
+ 
 </head>
 <body>
 	<div id="formulario-nibble">
@@ -78,6 +80,7 @@
   <nav>
     <div class="nav-wrapper">
       <a href="#" class="brand-logo"><img alt="lims" src="images/logos/lims.png"></a>
+       
    
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a id="btn_home" href="#">Home</a></li>
@@ -85,13 +88,15 @@
         <li><a id="btn_publicacoes" href="#">Publicações</a></li>
         <li><a id="btn_membros" href="#">Membros</a></li>
         <li><a id="btn_contato" href="#">Contato</a></li>
-         <li><a id="btn_contato" href="#">Login</a>
+     
          	
          </li>
       </ul>
+     
     </div>
+    
   </nav>
-        
+        <div id="login-nibble"><i id="icone-login" class="material-icons">account_circle</i></div>
  
 
 
@@ -816,6 +821,72 @@
 
     </div>
     <br><br>
+    
+    
+    <p id="carrosel_titulo">DESTAQUES</p>
+		<div id="conteiner_carrosel_nibble">
+			
+			
+			
+			
+			<ul>
+								
+			
+				<li class="carrosel_nibble">
+					<div id="capa0" class="capas"></div>
+					<div class='tempo'><img src="images/calendario.png">
+						<span class="tempo_valores">20/12/2016</span>
+						<img class="img2" src="images/relogio.png">
+						<span class="tempo_valores">16:40</span></div>
+					<p id="titulo0" class="titulo"> </p>
+					<div id="conteudo0" class="conteudo_carrosel">
+					</div>
+					
+				</li>
+				<li class="carrosel_nibble">
+					<div id="capa1" class="capas"></div>
+					<div class='tempo'><img src="images/calendario.png">
+						<span class="tempo_valores">20/12/2016</span>
+						<img class="img2" src="images/relogio.png">
+						<span class="tempo_valores">16:40</span></div>
+					<p id="titulo1" class="titulo"> </p>
+					<div id="conteudo1" class="conteudo_carrosel">
+					</div>
+					
+				</li>
+				<li class="carrosel_nibble">
+					<div id="capa2" class="capas"> </div>
+					<div class='tempo'><img src="images/calendario.png">
+						<span class="tempo_valores">20/12/2016</span>
+						<img class="img2" src="images/relogio.png">
+						<span class="tempo_valores">16:40</span></div>
+					<p id="titulo2" class="titulo"></p>
+					<div id="conteudo2" class="conteudo_carrosel">
+					</div>
+					
+				</li>
+				<li class="carrosel_nibble">
+					<div id="capa3" class="capas"> </div>
+					<div class='tempo'><img src="images/calendario.png">
+						<span class="tempo_valores">20/12/2016</span>
+						<img class="img2" src="images/relogio.png">
+						<span class="tempo_valores">16:40</span></div>
+					<p id="titulo3" class="titulo"></p>
+					<div id="conteudo3" class="conteudo_carrosel">
+					</div>
+					
+				</li>
+				
+				<div id="botao_esquerdo" class="carrosel_botoes">
+					<i class="material-icons">keyboard_arrow_left</i>
+			</div>
+			<div id="botao_direito" class="carrosel_botoes">
+			<i class="material-icons">keyboard_arrow_right</i>
+			</div>
+				
+			</ul>
+			
+		</div>
 
     <div class="section">
 
@@ -828,7 +899,7 @@
   			
   		</div>
   		<div class="rodaconteiners" id="lateral_centro">
-  			<img alt="logo do ifpi" src="images/logos/logoIFPI.png">
+  			<a href="http://www.ifpi.edu.br/" target="_blank"><img alt="logo do ifpi" src="images/logos/logoIFPI.png"></a>
   		</div>
   		<div class="rodaconteiners" id="lateral_direita">
   			
@@ -845,7 +916,7 @@
 <script src="js/jquery-3.1.0.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
-  
+   <script src="scripts/carroselhorizontal.js"> </script>
 
   </body>
 </html>

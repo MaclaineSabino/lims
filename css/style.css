@@ -78,8 +78,27 @@ box-shadow: 0px 0px 34px -14px rgba(0,0,0,0.75);
 	margin-left:5px;
 }/* fim do estilo da listagem de publicações*/
 
+#login-nibble #icone-login{  /*login*/
+	font-size:100px !important;
+	float:right;
+	color:rgb(3, 169, 244);
+	margin-right:20px;
+    margin-top:-150px;
+    border:1px solid;
+	
+}
 
+#login-nibble:hover{ 
+	z-index:10000 !important;
+	cursor:pointer;
+	color:black !important;
+	
 
+}
+.nav-wrapper .brand-logo{
+	margin-left:30px;
+	margin-top:5px;
+}
 #pj_projetos{/*inicio listagem projetos*/
 	display:none;
 	
