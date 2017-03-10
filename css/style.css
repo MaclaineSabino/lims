@@ -79,23 +79,48 @@ box-shadow: 0px 0px 34px -14px rgba(0,0,0,0.75);
 }/* fim do estilo da listagem de publicações*/
 
 #login-nibble #icone-login{  /*login*/
-	font-size:100px !important;
+	font-size:50px !important;
 	float:right;
 	color:rgb(3, 169, 244);
 	margin-right:20px;
-    margin-top:-170px;
+    margin-top:-160px;
+    z-index:22222222222;
    
 	
 }
+#login-nibble .material-icons{
+	z-index:100000 !important;
+}
 #formulario-nibble-login{
 	position:fixed;
-	
+	display:none;
+	color:blue;
+	text-align:center;
+	background-color:white;
 	margin-top:180px;
-	margin-left:920px;
+	margin-left:85%;
 	width:200px;
-	height:100px;
+	height:auto;
 	border:0px solid;
+	padding:5px 5px 5px 5px;
+	-webkit-box-shadow: 2px 11px 49px -15px rgba(0,0,0,0.75);
+-moz-box-shadow: 2px 11px 49px -15px rgba(0,0,0,0.75);
+box-shadow: 2px 11px 49px -15px rgba(0,0,0,0.75);
+
+-webkit-border-radius: 80px;
+-moz-border-radius: 80px;
+border-radius: 80px;
+border: 1px solid;
 }
+#formulario-nibble-login a{
+	font-size:50px;
+	color:#6495ED;
+}
+#formulario-nibble-login a:hover{
+	font-size:50px;
+	color:blue;
+}
+
 #conteiner_diversos{
 	width:100%;
 	height:auto;

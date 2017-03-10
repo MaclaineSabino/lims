@@ -190,11 +190,15 @@ var k=0;
     	
     });
     
-    $('#login-nibble i').hover(function(e){ //efeito sobre icone login
+    $('#login-nibble').hover(function(e){ //efeito sobre icone login
     	
     	$(this).css('color','#D9EAF7');
     	$(this).css('cursor','pointer');
     	 Materialize.toast('Área do administrador', 1000)
+    	 
+    	$('#formulario-nibble-login').css("display","block");
+    	$('#formulario-nibble-login').slidDown(3000);
+    	
     	
     	
     	
@@ -202,10 +206,12 @@ var k=0;
     function(e){
     	
     	$(this).css('color','rgb(3, 169, 244)');
-    	$('#modal1').modal('close');    	
+       	
     });
     
-    
+    $('#login-nibble').click(function(e){
+    	$('#formulario-nibble-login').slideUp(1500);
+    })
     
     $('#nibble_membros li img').hover(
     function(e){
