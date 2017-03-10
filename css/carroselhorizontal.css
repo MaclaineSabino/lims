@@ -1,11 +1,5 @@
  
- #principal{
- 	position:relative;
- 	
- 	height:auto;
- 	
- 	
- }
+ 
  
  
  #conteiner_carrosel_nibble{
@@ -20,6 +14,8 @@
  }
  #carrosel_titulo{
  	color:#0000CD;
+ 	font-size:x-large;
+ 	font-family: Arial, Helvetica, sans-serif;
  }
  
  #conteiner_carrosel_nibble li{

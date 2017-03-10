@@ -81,6 +81,8 @@ var k=0;
 
 (function($){
   $(function(){
+  	
+  	
   	//carrosel
   	inserirConteudo(k);
 	$("#conteiner_carrosel_nibble #botao_direito").click(function(e){
@@ -189,18 +191,18 @@ var k=0;
     });
     
     $('#login-nibble i').hover(function(e){ //efeito sobre icone login
-    	alert('oi');
-    	$(this).css('background-color','#D9EAF7');
+    	
+    	$(this).css('color','#D9EAF7');
     	$(this).css('cursor','pointer');
+    	 Materialize.toast('Área do administrador', 1000)
     	
     	
     	
     },
     function(e){
     	
-    	$(this).css('background-color','#FFFFFF');
-    	
-    	
+    	$(this).css('color','rgb(3, 169, 244)');
+    	$('#modal1').modal('close');    	
     });
     
     

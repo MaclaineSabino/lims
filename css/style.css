@@ -83,9 +83,53 @@ box-shadow: 0px 0px 34px -14px rgba(0,0,0,0.75);
 	float:right;
 	color:rgb(3, 169, 244);
 	margin-right:20px;
-    margin-top:-150px;
-    border:1px solid;
+    margin-top:-170px;
+   
 	
+}
+#formulario-nibble-login{
+	position:fixed;
+	
+	margin-top:180px;
+	margin-left:920px;
+	width:200px;
+	height:100px;
+	border:0px solid;
+}
+#conteiner_diversos{
+	width:100%;
+	height:auto;
+	margin-top:70px;
+	
+}
+.diversos{
+	width:40%;
+}
+.diversos_titulo{
+	font-family: Arial, Helvetica, sans-serif;
+	color:#0000CD;
+	font-size:x-large;
+	
+	padding-bottom:10px;
+	border-bottom:2px solid #0000CD;
+}
+.diversos .titulo{
+	font-size:large;
+	font-weight:bold;
+}
+#conteiner_diversos #diversos_direita{
+	float:right;
+}
+#menuface{
+	font-size:30px;
+	float:right;
+	margin-top:-150px;
+	margin-right:420px;
+	color:rgb(3, 169, 244);
+}
+#menuface span:hover{
+	cursor:pointer;
+	color:blue;
 }
 
 #login-nibble:hover{ 
