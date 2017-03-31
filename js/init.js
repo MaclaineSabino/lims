@@ -78,10 +78,58 @@ function esconder(classe){
 }
 
 var k=0;
+  var texto=[];
+function comprimir(div,bot){
+	var cont=0;
+	
+	do{    
+	var conteiner=div+':eq('+cont+')';
+	var quadro=bot+cont
+var tam=$('.'+conteiner).text().length; //efeito sobre a listagem de publicações
+
+        if(tam>80)
+        {
+           
+           var divi = $('.'+conteiner);
+           var text=texto[cont];
+           var query = $('.'+conteiner).text().split(" ", 12);
+                query.push("...");
+                var res = query.join(' ');
+            $('.'+conteiner).text(res).append('<span id='+quadro+' class="mdi mdi-plus-circle"></span>');
+            expandir(quadro,divi,text,div);
+        }
+        cont++;
+	}while(tam!=0);
+}
+
+function expandir(btn,div,text,div2){
+	
+	
+	$('#'+btn).click(function(e){
+		
+		$(div).html(text).append('<span id="btn_regresso" class="mdi mdi-minus-circle"></span>');
+		
+		$('#btn_regresso').click(function(e){
+			comprimir(div2,"botmais");
+		
+		
+		
+	});
+		
+	});
+	
+	
+	
+}
+
 
 (function($){
   $(function(){
-  	
+  	var t0=$(".light:eq(0)").text();
+  	var t1=$(".light:eq(1)").text();
+  	var t2=$(".light:eq(2)").text();
+texto=[t0,t1,t2];
+  	comprimir("light","botmais");
   	
   	//carrosel
   	inserirConteudo(k);
@@ -96,6 +144,17 @@ var k=0;
        
 		
 	});
+	//pagina projeto.html
+    $('#icone_proje').click(function(e){
+    	
+    	//window.location.href="arquivos/segurançasmtp.pdf";
+    	window.open('arquivos/segurançasmtp.pdf','_blank');
+    	
+    	
+    });
+    
+    
+    //fim projeto.html
 	$("#conteiner_carrosel_nibble #botao_esquerdo").click(function(e){
 		if(k>=4){
 		k=k-4;
@@ -108,7 +167,7 @@ var k=0;
     $('.button-collapse').sideNav();
     
     $('#btn_membros').click(function(){
-    	
+    	$('#conteiner_projetohtml').css('display','none');
     	$('#index-banner').css('display','none');
     	$('.section').css('display','none');
     	$('#nibble_lista').css('display','none');
@@ -118,7 +177,7 @@ var k=0;
     });
     
       $('#btn_home').click(function(){
-    	
+    	$('#conteiner_projetohtml').css('display','none');
     	$('#index-banner').css('display','block');
     	$('.section').css('display','block');
     	$('#nibble_membros').css('display','none');
@@ -126,7 +185,7 @@ var k=0;
     	$('#pj_projetos').css('display','none');
     });
      $('#btn_publicacoes').click(function(){
-    	
+    	$('#conteiner_projetohtml').css('display','none');
     	$('#index-banner').css('display','none');
     	$('.section').css('display','none');
     	$('#nibble_membros').css('display','none');
@@ -134,12 +193,22 @@ var k=0;
     	$('#pj_projetos').css('display','none');
     });
     $('#btn_projetos').click(function(){
+    	$('#conteiner_projetohtml').css('display','none');
     	$('#index-banner').css('display','none');
     	$('.section').css('display','none');
     	$('#nibble_membros').css('display','none');
     	$('#nibble_lista').css('display','none');
     	$('#pj_projetos').css('display','block');
     });
+    $('.proj_continuar').click(function(){
+    	$('#conteiner_projetohtml').css('display','block');
+    	$('#index-banner').css('display','none');
+    	$('.section').css('display','none');
+    	$('#nibble_membros').css('display','none');
+    	$('#nibble_lista').css('display','none');
+    	$('#pj_projetos').css('display','none');
+    	
+    })
     
     
     
@@ -155,7 +224,27 @@ var k=0;
     	$(this).css('background-color','#FFFFFF');
     	
     	
-    });//fim efeito sobre lista projetos
+    });
+    
+    
+    $('.secondary-content .projeto_resumo').click(function(){
+    	var valor = $(this).parent();
+    	
+    	
+    	$(valor).siblings('.projeto_conteiner_res').toggle('1',function(){
+    		
+    		
+    		
+    	});
+    	
+    	
+    	
+    	
+    });
+    
+    
+    
+    //fim efeito sobre lista projetos
     
     
     
@@ -189,6 +278,14 @@ var k=0;
     	
     	
     });
+    $('.carrosel_nibble').click(function(e){
+    	window.location.href="publicacao2.html";
+    	
+    	
+    });
+    //fim efeito sobre a lista do carrosel
+    
+    
     
     $('#login-nibble').hover(function(e){ //efeito sobre icone login
     	
@@ -196,10 +293,14 @@ var k=0;
     	$(this).css('cursor','pointer');
     	 Materialize.toast('Área do administrador', 1000)
     	 
-    	$('#formulario-nibble-login').css("display","block");
+    	
+    	
+    	$(this).click(function(e){
+    		$('#formulario-nibble-login').css("display","block");
     	$('#formulario-nibble-login').slidDown(3000);
-    	
-    	
+    	//$('#formulario-nibble-login').slideUp(1500);
+    })
+    
     	
     	
     },
@@ -212,6 +313,10 @@ var k=0;
     $('#login-nibble').click(function(e){
     	$('#formulario-nibble-login').slideUp(1500);
     })
+    
+    $(window).scroll(function(e){
+    	$('#formulario-nibble-login').slideUp(1500);
+    });
     
     $('#nibble_membros li img').hover(
     function(e){
@@ -252,7 +357,46 @@ var k=0;
 		
 	});//fim do efeito da listagem de publicações
     
-    
+    $('.btn_perfil').click(function(e){
+    	
+    	var valor = $(this).parent().parent().parent();
+    	
+    	var imagem33 = $(valor).siblings('.quadroimagem').html();
+    	
+    	
+    $('#perfil_membro').css('position','fixed');
+		$('#perfil_membro').css('display','block');
+		$('#perfil_membro').css('z-index','1000');
+		$('#botao-nibble-fechar').css('z-index','1200');
+		var largura = $('body').width();
+		
+	
+		var larguraform = $('#perfil-membro').width();
+	
+		var left = (largura-larguraform)/2;
+	
+		$('#perfil_membro ~ nav').css('opacity','0.2');
+		$('#perfil_membro ~ div').css('opacity','0.2');
+		$('#perfil_membro ~ footer').css('opacity','0.2');
+		
+		
+		$('perfil_membro').css('margin-top','100px');
+		$('#perfil_membro').css('margin-left',left+'px');
+		$('#perfil_membro').css('display','block');
+		$('#perfil_membro #perfil_membro_foto').html(imagem33);
+		
+		
+		$('#perfil_membro #perfil_membro_fechar').click(function(e){
+			$('#perfil_membro').css('display','none');
+			$('#perfil_membro ~ div').css('opacity','1.0');
+			$('#perfil_membro ~ nav').css('opacity','1.0');
+		$('#perfil_membro ~ div').css('opacity','1.0');
+		$('#perfil_membro ~ footer').css('opacity','1.0');
+			
+			
+		});
+    	
+    })
     
     
     $('#btn_contato').click(function(){  //efeito formulario flutuante

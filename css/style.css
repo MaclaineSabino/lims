@@ -91,6 +91,61 @@ box-shadow: 0px 0px 34px -14px rgba(0,0,0,0.75);
 #login-nibble .material-icons{
 	z-index:100000 !important;
 }
+.light span{
+	
+	font-size:20px;
+	color:rgb(3, 169, 244);
+}
+.light span:hover{
+	cursor:pointer;
+}	
+#perfil_membro{
+	display:none;
+	position:fixed;
+	display:none;
+	color:blue;
+	text-align:center;
+	background-color:white;
+	margin-top:180px;
+	margin-left:30%;
+	width:500px;
+	height:auto;
+	border:0px solid;
+	padding:5px 5px 5px 5px;
+	-webkit-box-shadow: 2px 11px 49px -15px rgba(0,0,0,0.75);
+-moz-box-shadow: 2px 11px 49px -15px rgba(0,0,0,0.75);
+box-shadow: 2px 11px 49px -15px rgba(0,0,0,0.75);
+
+
+border: 1px solid;
+}
+#perfil_membro .title{
+	font-size:20px;
+	color:#000080;
+}
+#perfil_membro .texto{
+	color:black;
+}
+#perfil_membro #perfil_membro_fechar{
+	float:right;
+	font-size:30px;
+	margin-top:-30px;
+	margin-right:-25px;
+}
+#perfil_membro #perfil_membro_fechar:hover{
+	cursor:pointer;
+	color:#00C5CD;
+}
+#perfil_membro .cargo{
+	color:#2F4F4F;
+}
+#perfil_membro .texto{
+	text-align:justify;
+}
+
+#perfil_membro_foto{
+	float:left;
+}
 #formulario-nibble-login{
 	position:fixed;
 	display:none;
@@ -126,6 +181,9 @@ border: 1px solid;
 	height:auto;
 	margin-top:70px;
 	
+}
+.section{
+	margin-top:-20px !important;
 }
 .diversos{
 	width:40%;
@@ -202,6 +260,23 @@ border: 1px solid;
 -moz-box-shadow: 0px 0px 34px -7px rgba(0,0,0,0.75);
 box-shadow: 0px 0px 34px -7px rgba(0,0,0,0.75);
 }
+#pj_projetos .secondary-content{
+	width:100px;
+	
+	 
+}
+#pj_projetos .projeto_arquivo{
+	float:right;
+}
+#pj_projetos .projeto_resumo{
+	
+}
+#pj_projetos .projeto_conteiner_res{
+	display:none;
+}
+#pj_projetos .projeto_conteiner_res .titulo_res{
+	font-weight:bolder;
+}
 
 
 
@@ -257,12 +332,20 @@ border-radius:3px 3px 3px 3px;
 	font-weight:bold;
 	
 }
+#nibble_membros .detalhe_membro .btn_perfil:hover{
+	cursor:pointer;
+}
 
 #nibble_membros .imagens_membros{
 	text-align:right;
 }
 #nibble_membros ul{
+	border:0px;
 	
+}
+#nibble_membros ul li{
+	border: 1px solid #CECECE;
+	margin:15px 5px;
 }
 
 #nibble_membros .paginacao{
@@ -318,6 +401,57 @@ z-index:2000;
 
 	
 }
+/*projeto.html*/
+.abstract{
+	font-weight:bold;
+	color:black !important;
+}
+.abstract_conteudo{
+	font-style:italic;
+	color:black !important;
+}
+
+.resumo{
+	font-weight:bold;
+	color:black !important;
+}
+.resumo_conteudo{
+	font-style:italic;
+	color:black !important;
+}
+#proj_titulo1{
+	color:black !important;
+}
+#proj_titulo2{
+	color:black !important;
+}
+#proj_titulo3{
+	color:black !important;
+}
+#conteiner_p{
+	color:blue;
+	
+}
+#icone_proje{
+	font-size:50px !important;
+}
+#icone_proje:hover{
+	cursor:pointer;
+	color:green;
+	
+}
+#conteiner_projetohtml{
+	margin-top:10px;
+	margin-bottom:20px;
+	display:none;
+-moz-box-shadow: 10px 10px 10px 5px #CECECE !important;
+ box-shadow: 2px 10px 10px 5px #CECECE !important;
+ padding:20px 20px 0px 20px;
+ border-radius: 15px 15px 15px 15px;
+	
+}
+
+/*fim projeto.html*/
 
 nav{
 	height:180px ;

@@ -1,0 +1,105 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+
+
+
+
+
+
+/*projeto.html*/
+.abstract{
+	font-weight:bold;
+	color:black !important;
+}
+.abstract_conteudo{
+	font-style:italic;
+	color:black !important;
+}
+
+.resumo{
+	font-weight:bold;
+	color:black !important;
+}
+.resumo_conteudo{
+	font-style:italic;
+	color:black !important;
+}
+#proj_titulo1{
+	color:black !important;
+}
+#proj_titulo2{
+	color:black !important;
+}
+#proj_titulo3{
+	color:black !important;
+}
+#conteiner_p{
+	color:blue;
+	
+}
+#icone_proje{
+	font-size:50px !important;
+}
+#icone_proje:hover{
+	cursor:pointer;
+	color:green;
+	
+}
+#conteiner_projetohtml{
+	
+-moz-box-shadow: 10px 10px 10px 5px #CECECE !important;
+ box-shadow: 2px 10px 10px 5px #CECECE !important;
+ padding:20px 20px 0px 20px;
+ border-radius: 15px 15px 15px 15px;
+	
+}
+/*fim projeto.html*/
+
+
+nav a{
+		color: #000000 !important;
+}
+nav a:hover{
+	color:#0000CD!important;
+	
+	font-weight: bold;
+}
+#nav-mobile{
+	margin-top:110px;
+}
+footer{
+	background-color:#FFFFFF !important;
+	-webkit-box-shadow: inset 8px -1px 300px -146px rgba(0,0,0,1);
+-moz-box-shadow: inset 8px -1px 300px -146px rgba(0,0,0,1);
+box-shadow: inset 8px -1px 300px -146px rgba(0,0,0,1);
+}
+footer .row{
+	color: #27408B !important;
+	background-color:#FFFFFF !important;
+}
+footer .rodaconteiners{
+	display:inline-block;
+	
+	height: auto;
+	text-align:center;
+	
+}
+footer #lateral_esquerda{
+	width:30%;
+}
+footer #lateral_centro{
+	width:35%;
+	text-align:center;
+}
+footer #lateral_direita{
+	width:30%;
+}
+.footer-copyright .container{
+	
+}
